@@ -2,8 +2,10 @@
 
 import { useEffect } from "react";
 import { useState } from "react";
+import Course from "../Course/Course";
+import PropTypes from 'prop-types';
 
-const Courses = () => {
+const Courses = ({handleAddToCart}) => {
 
     const [courses, setCourses] = useState([]);
 
@@ -14,10 +16,23 @@ const Courses = () => {
     },[])
 
     return (
-        <div>
-            
+        <div className="w-[70%]">
+            <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-y-10 gap-x-6">
+            {
+                courses.map(course => <Course 
+                    key={course.id} 
+                    course={course}
+                    handleAddToCart={handleAddToCart}>
+
+                    </Course>)
+            }
+            </div>
         </div>
     );
 };
+
+Courses.propTypes = {
+    handleAddToCart: PropTypes.func
+}
 
 export default Courses;
