@@ -2,7 +2,7 @@
     {
       "id": "CSE101",
       "course_title": "Introduction to Programming",
-      "img": "https://i.ibb.co/z7yGB1t/Rectangle-2.png",
+      "img": "https://i.ibb.co/Mp5C0gN/Rectangle-2-2.png",
       "details": "An introductory course covering the basics of programming and problem-solving.",
       "credit_hours": 3,
       "price": 299.99
@@ -10,7 +10,7 @@
     {
       "id": "CSE201",
       "course_title": "Introduction to Algorithms",
-      "img": "https://i.ibb.co/6DS34c0/Rectangle-2-1.png",
+      "img": "https://i.ibb.co/6Jd25fV/Rectangle-2-3.png",
       "details": "Learn about fundamental data structures and algorithms used in software development.",
       "credit_hours": 4,
       "price": 399.99
@@ -18,7 +18,7 @@
     {
       "id": "CSE301",
       "course_title": "Introduction to C++",
-      "img": "https://i.ibb.co/Mp5C0gN/Rectangle-2-2.png",
+      "img": "https://i.ibb.co/5WKVgbb/Rectangle-2-4.png",
       "details": "Explore the principles of the C++ programming language.",
       "credit_hours": 3,
       "price": 349.99
@@ -26,7 +26,7 @@
     {
       "id": "CSE401",
       "course_title": "Basic Data Structures",
-      "img": "https://i.ibb.co/6Jd25fV/Rectangle-2-3.png",
+      "img": "https://i.ibb.co/C9TSGHG/Rectangle-3.png",
       "details": "Learn about fundamental data structures used in computer science.",
       "credit_hours": 4,
       "price": 449.99
@@ -34,7 +34,7 @@
     {
       "id": "CSE501",
       "course_title": "Introduction to OOP Python",
-      "img": "https://i.ibb.co/5WKVgbb/Rectangle-2-4.png",
+      "img": "https://i.ibb.co/z7yGB1t/Rectangle-2.png",
       "details": "Dive into object-oriented programming using Python.",
       "credit_hours": 4,
       "price": 499.99
@@ -50,7 +50,7 @@
     {
       "id": "CSE701",
       "course_title": "Cloud Computing",
-      "img": "https://i.ibb.co/mGD69jd/Rectangle-2-6.png",
+      "img": "https://i.ibb.co/VwM8ZLp/Rectangle-3-1.png",
       "details": "Learn about cloud infrastructure and deployment strategies.",
       "credit_hours": 3,
       "price": 349.99
@@ -58,7 +58,7 @@
     {
       "id": "CSE801",
       "course_title": "Database Management with MySQL",
-      "img": "https://i.ibb.co/C9TSGHG/Rectangle-3.png",
+      "img": "https://i.ibb.co/6DS34c0/Rectangle-2-1.png",
       "details": "Explore database management using the MySQL database system.",
       "credit_hours": 4,
       "price": 449.99
@@ -66,7 +66,7 @@
     {
       "id": "CSE901",
       "course_title": "Problem Solving",
-      "img": "https://i.ibb.co/VwM8ZLp/Rectangle-3-1.png",
+      "img": "https://i.ibb.co/mGD69jd/Rectangle-2-6.png",
       "details": "Develop problem-solving skills and strategies for software development.",
       "credit_hours": 3,
       "price": 399.99

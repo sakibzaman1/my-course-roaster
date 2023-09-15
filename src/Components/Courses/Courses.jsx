@@ -5,7 +5,7 @@ import { useState } from "react";
 import Course from "../Course/Course";
 import PropTypes from 'prop-types';
 
-const Courses = ({handleAddToCart,handleTotalCredit, handleCreditHoursRemaining}) => {
+const Courses = ({handleAddToCart}) => {
 
     const [courses, setCourses] = useState([]);
 
@@ -23,8 +23,7 @@ const Courses = ({handleAddToCart,handleTotalCredit, handleCreditHoursRemaining}
                     key={course.id} 
                     course={course}
                     handleAddToCart={handleAddToCart}
-                    handleTotalCredit={handleTotalCredit}
-                    handleCreditHoursRemaining={handleCreditHoursRemaining}>
+                    >
 
                     </Course>)
             }
@@ -34,9 +33,7 @@ const Courses = ({handleAddToCart,handleTotalCredit, handleCreditHoursRemaining}
 };
 
 Courses.propTypes = {
-    handleAddToCart: PropTypes.func,
-    handleTotalCredit : PropTypes.func,
-    handleCreditHoursRemaining: PropTypes.func
+    handleAddToCart: PropTypes.func
 }
 
 export default Courses;
