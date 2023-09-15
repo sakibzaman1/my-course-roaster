@@ -5,7 +5,7 @@ import { useState } from "react";
 import Course from "../Course/Course";
 import PropTypes from 'prop-types';
 
-const Courses = ({handleAddToCart}) => {
+const Courses = ({handleAddToCart,handleTotalCredit, handleCreditHoursRemaining}) => {
 
     const [courses, setCourses] = useState([]);
 
@@ -16,13 +16,15 @@ const Courses = ({handleAddToCart}) => {
     },[])
 
     return (
-        <div className="w-[70%]">
-            <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-y-10 gap-x-6">
+        <div className="lg:w-[70%]">
+            <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-y-10 lg:gap-x-6">
             {
                 courses.map(course => <Course 
                     key={course.id} 
                     course={course}
-                    handleAddToCart={handleAddToCart}>
+                    handleAddToCart={handleAddToCart}
+                    handleTotalCredit={handleTotalCredit}
+                    handleCreditHoursRemaining={handleCreditHoursRemaining}>
 
                     </Course>)
             }
@@ -32,7 +34,9 @@ const Courses = ({handleAddToCart}) => {
 };
 
 Courses.propTypes = {
-    handleAddToCart: PropTypes.func
+    handleAddToCart: PropTypes.func,
+    handleTotalCredit : PropTypes.func,
+    handleCreditHoursRemaining: PropTypes.func
 }
 
 export default Courses;

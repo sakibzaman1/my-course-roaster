@@ -4,13 +4,13 @@ import PropTypes from 'prop-types';
 import { FaBookmark } from 'react-icons/fa';
 
 
-const Course = ({ course, handleAddToCart }) => {
+const Course = ({ course, handleAddToCart, handleTotalCredit, handleCreditHoursRemaining }) => {
 
     const { course_title, img, details, credit_hours, price } = course;
 
     return (
         <div>
-            <div className ="w-[320px] h-[480px] bg-base-100 shadow-xl rounded-xl p-4">
+            <div className ="lg:w-[320px] h-[480px] bg-base-100 shadow-xl rounded-xl sm:p-1 md:p-2 lg:p-4">
                 <figure className ="pt-2">
                     <img src={img} alt="" className="w-full" />
                 </figure>
@@ -26,7 +26,7 @@ const Course = ({ course, handleAddToCart }) => {
                         <small className='text-base font-medium text-gray-600'><button><FaBookmark></FaBookmark></button>Credit: {credit_hours}</small>
                     </div>
                     <div className="p-4 h-10">
-                        <button onClick={()=> handleAddToCart(course)} className="w-full h-8 text-white rounded-xl bg-blue-600">Select</button>
+                        <button onClick={()=> {handleAddToCart(course,credit_hours);handleTotalCredit(credit_hours); handleCreditHoursRemaining(credit_hours)}} className="w-full h-8 text-white rounded-xl bg-blue-600">Select</button>
                     </div>
                 </div>
             </div>
@@ -36,7 +36,9 @@ const Course = ({ course, handleAddToCart }) => {
 
 Course.propTypes = {
     course: PropTypes.object.isRequired,
-    handleAddToCart: PropTypes.func
+    handleAddToCart: PropTypes.func,
+    handleTotalCredit: PropTypes.func,
+    handleCreditHoursRemaining: PropTypes.func
 
 }
 
