@@ -1,15 +1,15 @@
 // import React from 'react';
 import PropTypes from 'prop-types';
 
-const CartCourse = ({course}) => {
+const CartCourse = ({ course }) => {
 
-    const {course_title} = course;
+    const { course_title } = course;
 
     return (
         <div className='font-normal text-gray-600'>
-            
-                <li>{course_title}</li>
-            
+
+            <li>{course_title}</li>
+
         </div>
     );
 };

@@ -5,6 +5,8 @@ import Header from './Components/Header/Header'
 import Courses from './Components/Courses/Courses'
 import Cart from './Components/Cart/Cart'
 import { useState } from 'react'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -19,7 +21,7 @@ function App() {
     // console.log(course);
     const doesExist = cart.find((item) => item.id == course.id);
     if (doesExist) {
-      alert('Course Already Selected')
+      toast("Course Already Selected!");
     }
     else {
       const oldCart = [...cart];
@@ -28,7 +30,7 @@ function App() {
       if ((totalCredit + credit_hours > 20) && (creditHoursRemaining - credit_hours < 0)) {
         setCart(oldCart);
         setCreditHoursRemaining(creditHoursRemaining);
-        alert("Can't be added more");
+        toast("Can't be Added More!");
       } else {
         setCart(newCart);
         setTotalCredit(totalCredit + credit_hours);
@@ -50,9 +52,19 @@ function App() {
         <Cart cart={cart} totalCredit={totalCredit} creditHoursRemaining={creditHoursRemaining}></Cart>
 
       </div>
-
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
     </div>
-
 
 
   )
