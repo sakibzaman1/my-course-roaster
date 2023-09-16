@@ -34,7 +34,7 @@ function App(){
 3. *Then I declared a state variable using useState Hook*
 
 ```javascript
-const [count, setCount] = useState()
+const [count, setCount] = useState(0)
 
 ```
 
@@ -46,7 +46,7 @@ const [count, setCount] = useState()
 
  5. *Updating a State*
 
- ```html
+ ```javascript
  <button onClick={() => setCount(count + 1)}>
     Click me
  </button>
